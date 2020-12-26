@@ -1,0 +1,119 @@
+:root {
+  --button-color: #824FF1;
+  --text-color: #1B0A42;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.nav {
+  padding: 20px 40px 30px 0;
+  line-height: 1.6px;
+  letter-spacing: 2%;
+}
+
+.nav__list__item {
+  cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+  font-family: roboto, sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.nav__list__item--float {
+  float: right;
+}
+
+.button {
+  border-radius: 6px;
+  padding: 12px 30px;
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: #ffffff;
+  border-style: none;
+  font-size: 16px;
+}
+
+.button--shadow {
+  -webkit-box-shadow: 0 0 1.5px var(--button-color);
+          box-shadow: 0 0 1.5px var(--button-color);
+}
+
+.button:hover {
+  border-style: solid;
+}
+
+.link {
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  line-height: 48px;
+  color: var(--text-color);
+}
+
+.link--logo {
+  padding-right: 100px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.link--logo::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: 90px;
+  height: 8px;
+  width: 8px;
+  background-color: var(--button-color);
+  border-radius: 100%;
+}
+
+.homesection {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homesection__content {
+  padding-right: 130px;
+  padding-left: 100px;
+  margin: 150px 0px;
+  width: 500px;
+}
+
+.homesection__content__title {
+  font-size: 42px;
+  font-family: 'Ramajara', serif;
+  color: var(--text-color);
+  text-shadow: 0px 2px 2px #000;
+  margin-bottom: 0;
+}
+
+.homesection__content__text {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #9f9f9f;
+  letter-spacing: 2%;
+  margin-bottom: 50px;
+}
+
+.homesection__image {
+  margin-right: 60px;
+  float: right;
+}
+
+.homesection__image--below {
+  position: absolute;
+}
+
+.homesection__image--top {
+  position: relative;
+  padding-left: 60px;
+}
+/*# sourceMappingURL=style.css.map */
