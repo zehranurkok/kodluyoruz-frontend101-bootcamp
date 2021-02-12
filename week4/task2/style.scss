@@ -1,0 +1,22 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.theme-light{
+    background-color: white;
+    color: black;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
+
+.header{
+    &__button{
+        background-color: rgb(138, 9, 37);
+        border-radius: 20px;
+        cursor: pointer;
+        color: rgb(233, 205, 215);
+    }
+}
