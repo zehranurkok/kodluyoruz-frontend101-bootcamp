@@ -1,0 +1,70 @@
+:root {
+    --generalcolor-one: #FB4C47;
+    --generalcolor-two: #035755;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif, 'Times New Roman', Times, serif;
+}
+
+figure {
+    margin: 0px;
+}
+
+.header {
+    padding-top: 31px;
+    padding-bottom: 56px;
+
+    .nav-wrap {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.nav {
+    &__item {
+        // nav items
+        color: var(--generalcolor-two);
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        
+        &:not(:last-child) {
+            margin-right: 40px;
+            margin-top: 21px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        // active nav item
+        &--active {
+            color: var(--generalcolor-one);
+            pointer-events: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.button {
+    &--one {
+        border: 2px solid var(--generalcolor-one);
+        box-sizing: border-box;
+        border-radius: 46px;
+        color: var(--generalcolor-one);
+        padding: 16px 45px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: white;
+    }
+}
+
